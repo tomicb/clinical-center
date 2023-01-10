@@ -1,0 +1,148 @@
+.medicalRecordItems {
+    margin-top: 30px;
+}
+
+.medicalRecordItems h4 {
+     margin-left: 10px;
+}
+
+.medicalRecordItem {
+    margin: 4px 1px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.medicalRecordItemIcon {
+    margin-left: 8px;
+    color: #9A1750;
+}
+
+.medicalRecordItemIcon:hover {
+    color: rgb(227,175,188);
+}
+
+.medicalRecordItemAddBtn {
+    margin-left: 5px;
+    padding: 6px 15px;
+    border: none;
+    background-color: rgb(227,175,188);
+    color: #9A1750;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.medicalRecordItemAddBtn:focus {
+    outline: none;
+}
+
+.medicalRecordItemAddBtn:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.backgroundOverlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.addMedicalRecordItem {
+    position: absolute;
+    background-color: #fff;
+    z-index: 20;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.addMedicalRecordItem h6 {
+    font-size: 1.25rem;
+}
+
+.addMedicalRecordItem > div {
+    margin: 14px 0;
+    text-align: left;
+}
+
+.addMedicalRecordItem span {
+    margin-left: 5px;
+    color: #5D001E;
+}
+
+.addMedicalRecordItem input {
+    display: block;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.addMedicalRecordItem input:focus {
+    outline: none;
+}
+
+.cancelBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.cancelBtn:hover {
+    cursor: pointer;
+}
+
+.btnSave {
+    color: #ffffff !important;
+    background-color: #9A1750 !important;
+}
+
+.btnSave:hover {
+    color: #9A1750 !important;
+    background-color: rgb(227,175,188) !important;
+    transition: 500ms;
+    border: 1px solid #9A1750;
+}
+
+.examinations {
+     margin: 30px auto 50px auto;
+ }
+
+.examination {
+    margin: 12px 0;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.examination:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+
+    .examination > div {
+        margin: 5px 0;
+        text-align: center !important;
+        justify-content: center;
+    }
+
+    .examination > div p {
+        text-align: justify;
+    }
+}

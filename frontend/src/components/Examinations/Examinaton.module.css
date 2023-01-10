@@ -1,0 +1,111 @@
+.report {
+    margin: 30px auto;
+}
+
+.report textarea {
+    padding: 0.8rem;
+    width: 100%;
+    height: 7rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    border: none;
+}
+
+.report textarea:focus {
+    outline: none;
+}
+
+.noMedication,
+.medications h4,
+.report h4 {
+    margin-left: 10px;
+}
+
+.medications {
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.addMedication {
+    display: flex;
+}
+
+.addMedication input {
+    margin: 0;
+    width: 200px;
+    padding: 3px 8px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    border: none;
+}
+
+.addMedication input:focus {
+    outline: none;
+}
+
+.addMedication button {
+    padding: 0 8px;
+    border: none;
+    background-color: rgba(227,175,188,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    border-radius:  0 10px 10px 0;
+}
+
+.addMedication button:focus {
+    outline: none;
+}
+
+.addMedication button:hover {
+    cursor: pointer;
+    color: #ffffff !important;
+    background-color: #9A1750 !important;
+    transition: 400ms;
+}
+
+.addMedication button i {
+    color: #9A1750;
+}
+
+.medication {
+    margin: 4px 3px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.medication p {
+    display: inline;
+}
+
+.medicationIcon {
+    margin-left: 8px;
+}
+
+.medicationIcon:hover {
+    cursor: pointer;
+}
+
+.btnSave {
+    color: #ffffff !important;
+    background-color: #9A1750 !important;
+}
+
+.btnSave:hover {
+    color: #9A1750 !important;
+    background-color: rgb(227,175,188) !important;
+    transition: 500ms;
+    border: 1px solid #9A1750;
+}
+
+.btnSave:disabled {
+    cursor: not-allowed;
+}

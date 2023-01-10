@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 50px;
+}
+
+.stars{
+    margin: auto;
+}

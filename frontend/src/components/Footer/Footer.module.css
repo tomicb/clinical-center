@@ -1,0 +1,53 @@
+footer {
+    background-color: #e3afbc;
+    color: #ffffff;
+}
+
+.footerContent {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footerContent h4 {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}
+
+footer p,
+footer i,
+footer a {
+    color: #ffffff;
+}
+
+footer i:hover,
+footer a:hover {
+    color: #5d001e;
+    text-decoration: none;
+}
+
+.socialIcons {
+    margin: 1rem 0.4rem;
+    font-size: 1.6rem;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerInfo span {
+    margin-left: 6px;
+}
+
+footer hr {
+    background-color: #747474;
+    height: 1px;
+    width: 100%;
+    margin: 0;
+}
+
+.lowerFooter {
+    background-color: #9A1750;
+    text-align: center;
+    padding: 12px;
+}

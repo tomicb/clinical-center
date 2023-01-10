@@ -1,0 +1,28 @@
+.form{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.select{
+    width: 100%;
+}
+
+.block{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.cancel{
+    background-color: salmon;
+}
+
+.submit{
+    background-color: springgreen;
+}
+
+@media(min-width: 750px){
+    .form{
+        width: 30%;
+    }
+}

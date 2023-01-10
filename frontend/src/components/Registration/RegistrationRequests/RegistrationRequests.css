@@ -1,0 +1,15 @@
+.content {
+    min-height: 70vh;
+}
+
+div.container-fluid {
+    width: 65vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1445px) {
+
+    div.container-fluid {
+        width: 85vw;
+    }
+}

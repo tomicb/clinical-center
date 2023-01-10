@@ -1,0 +1,46 @@
+.user {
+    margin: 20px auto;
+    padding: 15px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.btns {
+    text-align: right;
+    margin: auto 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 992px) {
+
+    .btns button {
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .user > div:first-child i,
+    .user > div:first-child span {
+        font-size: 1.6rem;
+    }
+
+    .user div {
+        margin-bottom: 5px !important;
+    }
+
+    .btns {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .btns button {
+        font-size: 1.2rem;
+    }
+}

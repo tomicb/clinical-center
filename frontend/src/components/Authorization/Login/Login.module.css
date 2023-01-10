@@ -1,0 +1,85 @@
+.login {
+    width: 60%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.heading {
+    margin: 2px auto 0;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+}
+
+.heading button {
+    padding: 1rem 0;
+    width: 50%;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #9A1750;
+    border-radius: 0;
+}
+
+.firstBtn {
+    border-right: 1px solid #9A1750;
+}
+
+.btnBorder {
+    border-bottom: 3px solid #9A1750 !important;
+}
+
+.loginMain {
+    padding: 3rem;
+    text-align: center;
+}
+
+.loginMain h3 {
+    margin: 0;
+    color: #5d001e;
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+}
+
+.loginMain h6 {
+    margin: 0 0 1rem;
+}
+
+.link {
+    color: #9A1750;
+}
+
+.link:hover {
+    color: #e3afbc;
+    transition: 200ms;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1485px) {
+
+    .login {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .login {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .login {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .login {
+        width: 90%;
+    }
+}

@@ -1,0 +1,53 @@
+.row {
+    min-height: 100vh;
+    margin: 0 !important;
+}
+
+.welcomeSection {
+    background-color: #9A1750;
+}
+
+.welcome {
+    color: #fff;
+    text-align: center;
+    margin: auto 0;
+}
+
+.welcomeIcon {
+    font-size: 15rem;
+}
+
+.welcome h1 {
+    margin-bottom: 5rem;
+    font-size: 7rem;
+    font-family: 'Caveat', cursive;
+}
+
+.welcome h2 {
+    margin-top: 1rem;
+    font-size: 5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+@media screen and (max-width: 1485px) {
+
+    .welcome h1 {
+        font-size: 5rem;
+    }
+
+    .welcome h2 {
+        font-size: 3.6rem;
+    }
+
+    .welcomeIcon {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .welcome h1 {
+        margin-bottom: 1.2rem;
+    }
+}

@@ -1,0 +1,48 @@
+.nav {
+    background-color: #e3afbc;
+}
+
+.navbarBrand {
+    font-family: 'Kaushan Script', cursive !important;
+    font-size: 1.5rem;
+    color: #5d001e !important;
+}
+
+.navLink {
+    color: #5d001e !important;
+    margin-left: 15px;
+}
+
+.navLogoutBtn {
+    color: #5d001e !important;
+    margin-left: 15px;
+    background: none;
+    border: none !important;
+}
+
+.navLogoutBtn:hover,
+.navbarBrand:hover,
+.navLink:hover {
+    color: #E3E2DF !important;
+    text-decoration: none;
+}
+
+.navbarToggler {
+    border: none !important;
+}
+
+.navbarDropdown {
+    margin-left: 15px;
+}
+
+.navbarDropdown button {
+    color: #5d001e !important;
+    background: none !important;
+    border: none;
+}
+
+.navbarDropdown button:active,
+.navbarDropdown button:focus {
+    background: none !important;
+    box-shadow: none !important;
+}

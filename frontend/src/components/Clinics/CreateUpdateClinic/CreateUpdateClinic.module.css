@@ -1,0 +1,239 @@
+.inputItem {
+    display: flex;
+    width: 50%;
+    margin: 16px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.inputItemIcon {
+    margin: 0.8rem 4px 0 1rem;
+    vertical-align: top;
+}
+
+.inputItem textarea,
+.inputItem input {
+    width: calc(100% - 32px);
+    padding: 8px 14px 8px 4px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+}
+
+.inputItem textarea {
+    min-height: 160px;
+}
+
+.inputItem textarea:focus,
+.inputItem input:focus {
+    outline: none;
+}
+
+.btns {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.showAdminsBtn {
+    color: #5d001e;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.showAdminsBtn:hover {
+    color: #fff;
+    background-color: #e3afbc;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.adminsPopup {
+    width: 50%;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 20;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.pricelist {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 16px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    background-color: #fff;
+}
+
+.pricelist:hover {
+    cursor: pointer;
+}
+
+.pricelist p {
+    font-style: italic;
+    text-align: justify;
+    margin: 0em;
+}
+
+.pricelistHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricelistHeading h6 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.addPriceItemBtn {
+    display: inline-block;
+    color: #5d001e;
+    background-color: #fff;
+    padding: 6px 10px;
+    margin: 0;
+    border: none;
+    border-radius: 10px;;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.addPriceItemBtn:hover {
+    color: #fff;
+    background-color: #e3afbc;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.saveClinicBtn {
+    color: #5d001e;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 20px 0 35px 0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.saveClinicBtn:hover {
+    color: #fff;
+    background-color: #e3afbc;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.backgroundOverlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 10;
+}
+
+.addNewPriceItem {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 20;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.addNewPriceItem h6 {
+    font-size: 1.25rem;
+}
+
+.addNewPriceItem > div {
+    margin: 14px 0;
+    text-align: left;
+}
+
+.addNewPriceItem span {
+    margin-left: 5px;
+}
+
+.addNewPriceItem textarea {
+    min-height: 140px;
+}
+
+.addNewPriceItem textarea,
+.addNewPriceItem input {
+    width: 400px;
+    display: block;
+    border: none;
+    padding: 3px 8px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(227,175,188,0.75);
+}
+
+.addNewPriceItem textarea:focus,
+.addNewPriceItem input:focus {
+    outline: none;
+}
+
+.errorBorder {
+    border: 2px solid #5D001E !important;
+    box-shadow: 0px 0px 4px 1px rgba(93,0,30,0.7) !important;
+    -webkit-box-shadow: 0px 0px 6px 2px rgba(93,0,30,0.7) !important;
+    -moz-box-shadow: 0px 0px 4px 1px rgba(93,0,30,0.7) !important;
+}
+
+.cancelBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.cancelBtn:hover {
+    cursor: pointer;
+}
+
+.deleteBtn {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+}
+
+.btnSave {
+    color: #ffffff !important;
+    background-color: #9A1750 !important;
+}
+
+.btnSave:hover {
+    color: #9A1750 !important;
+    background-color: rgb(227,175,188) !important;
+    transition: 500ms;
+    border: 1px solid #9A1750;
+}

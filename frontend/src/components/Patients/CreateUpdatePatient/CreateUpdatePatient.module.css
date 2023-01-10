@@ -1,0 +1,47 @@
+.maindiv{
+    display: flex;
+}
+
+
+.form{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.oneinput{
+
+    padding: 5px;
+    width: 200%;
+    height: 25px;
+    margin: 5px;
+    border: none; 
+    border:solid 1px #ccc;
+    border-radius: 10px;
+  }
+
+.select{
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+    margin: 5px;
+    border: none; 
+    border:solid 1px #ccc;
+    border-radius: 10px;
+}
+
+.cancel{
+    margin: 5px;
+    background-color: salmon;
+}
+
+.submit{
+    margin-top: 142px;
+    margin-left: 30px;
+    background-color: springgreen;
+}
+
+@media(min-width: 750px){
+    .form{
+        width: 30%;
+    }
+}
