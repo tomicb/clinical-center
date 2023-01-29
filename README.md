@@ -1,34 +1,34 @@
-# eKlinika
+# Clinical center system
 
-#### Projekat implementirao tročlani tim
+#### This project was implemented by a team of 3 members.
 
-### Predmet - Upravljanje projektima, Informaciona bezbednost (2021)
+### Course - Information security (2021)
 
-#### Korišćene tehnologije: JavaScript, React, Java, Spring Boot, Spring Security, JPA, MySQL
+#### Technologies used: JavaScript, React, Java, Spring Boot, Spring Security, JPA, MySQL
 
-Sistem kliničkog centra omogućava pacijentima zakazivanje pregleda. Pristup sistemu imaju medicinske sestre i lekari koji mogu da unose izveštaje o izvršenim pregledima. Klinički centar se sastoji iz više usko specijalizovanih klinika koje su registrovane u okviru informacionog sistema. Osnovna namena aplikacije je vođenje evidencije o zaposlenima, registrovanim klinikama, pacijentima i njihovim zdravstvenim kartonima, kao i zakazivanje pregleda.
+The clinical center system allows patients to schedule an appointment. Access to the system have nurses and doctors who can enter reports on performed examinations. The clinical center consists of several narrowly specialized clinics using the information system. The system keeps records of employees, registered clinics, patients, and their medical records.
 
 ##
 
-### Deo specifikacije projekta za koji sam bio zadužen
+### Functionalities that I have implemented
 
-#### Postupak unošenja izveštaja o pregledu
-Lekar iz svog radnog kalendara bira pregled koji se započinje. Dok pregled traje, lekar može u slobodnoj formi da unese informacije o pregledu i unese dijagnozu. Lekar može dodatno da unosi recepte koje medicinska sestra na kraju pregleda mora da overi. Nakon popunjenog izveštaja, sve promene koje su unete od strane medicinske sestre ili lekara, trajno se beleže u zdravstveni karton pacijenta pod istorijom bolesti.
+#### Entering examination report data
+The doctor starts the examination from his working calendar. During the examination, the doctor enters examination data and diagnosis. The doctor can additionally enter prescriptions that the nurse will verify. Examination data, diagnosis, and prescriptions are permanently recorded in the patient's medical record under the medical history.
 
-#### Postupak overe recepta
-Nakon što lekar završi pregled, medicinska sestra treba da overi recepte koje je lekar propisao pacijentu. Recept se overava jednim klikom. Sistem ima informaciju koja medicinska sestra je overila recept.
+#### Prescription approval
+After examination, the nurse verifies the prescriptions doctor prescribed for the patient. The system has information on which nurse verified the prescription.
 
-#### Grafički prikaz radnog kalendara
-Lekar na svom profilu ima opciju da pregleda svoj radni kalendar na nedeljnom, mesečnom i godišnjem nivou. Potrebno je za svaki dan u mesecu da se prikažu svi pregledi, a za svaki pregled vreme početka, trajanje i proizvoljne dodatne informacije o istom, kao na primer ime i prezime pacijenta.
+#### Work calendar
+The doctor can view his examinations on a weekly, monthly, and yearly work calendar. The work calendar displays the time, duration, and patient's name for all doctor's examinations.
 
-#### Prijava na sistem bez upotrebe lozinke
-Korisnik može da odabere opciju da se prijavi na sistem samo uz pomoć email adrese (tzv. •passwordless login) • . Nakon unosa email adrese, šalje se zahtev pri čemu je na serverskoj strani potrebno generisati jednokratni token sa periodom važenja od maksimalno 10 minuta. Taj token se kao deo “magičnog linka” šalje korisniku na njegovu email adresu. Korisnik ima 10 minuta da otvori email i poseti link. Klikom na link, na serveru se proverava ispravnost tokena. Ukoliko je token ispravan, server će za autentifikaciju korisnika izgenerisati novi par refresh i access tokena. Voditi računa o tome da se jednom generisani link ne može posetiti više puta.
+#### Passwordless login
+The user can log in to the system without a password (passwordless login). After entering the email address, the system generated a token with a validity period of 10 minutes. The system sends a email containing token to the user's email address. The user has 10 minutes to open the email and visit the link. After the user clicks the link, the server will generate a new pair of refresh and access tokens for user authentication. The link can not be used more than once.
 
-#### Osvežavanje tokena
-Access token ima period važenja od 15 minuta. Ukoliko je access token istekao, a ispravno je generisan i potpisan, korisnik može da pošalje novi zahtev za osvežavanje access tokena, pri čemu će se proveriti identitet tog korisnika na osnovu refresh tokena. Ukoliko u sistemu postoji takav korisnik i on nije blokiran, potrebno je izgenerisati novi access token, koji će se poslati kao odgovor na klijentski deo aplikacije (front-end). Novi izgenerisani token treba da zameni stari u zaglavlju budućih HTTP zahteva sa klijentske strane. Access token može da se osvežava do datuma važenja refresh tokena.
+#### Token refresh
+The access token has a validity period of 15 minutes. After the access token expires, the client sends a new request to refresh the access token. The system checks the identity of the user based on the refresh token. If such user exists and is not blocked, the server generates a new access token and sends it to the client. The newly generated token should replace the old one in the header of future HTTP requests. The access token can be refreshed until the refresh token expires.
 
-#### Kontrola pristupa pomoću RBAC modela
-Potrebno je implementirati model kontrole pristupa svakom delu sistema uz pomoć uloga i permisija. Jedan korisnik može da ima više uloga, a jednoj ulozi može biti dodeljeno više permisija. Potrebno je na nivou kompletnog sistema (za svaku metodu kontrolera) definisati prava pristupa. Izuzeci mogu biti metode za prijavu i registraciju na sistem. Takođe, potrebno je postaviti permisije za sve CRUD operacije koje postoje u sistemu.
+#### Access control using the RBAC model
+Access control is implemented with the help of roles and permissions. One user can have multiple roles, and one role can have multiple permissions.
 
-#### Šifrovanje osetljivih podataka
-Osetljive podatke (LBO pacijenta) je potrebno šifrovati pre skladištenja u bazi.
+#### Sensitive data encryption
+Sensitive data is encrypted before saving in the database. When getting data from the database, the encrypted data must be decrypted with the help of the appropriate key.
