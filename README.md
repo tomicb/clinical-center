@@ -10,7 +10,7 @@ The clinical center system allows patients to schedule an appointment. Access to
 
 ##
 
-### Functionalities that I have implemented
+### Functionalities I have implemented
 
 #### Entering examination report data
 The doctor starts the examination from his working calendar. During the examination, the doctor enters examination data and diagnosis. The doctor can additionally enter prescriptions that the nurse will verify. Examination data, diagnosis, and prescriptions are permanently recorded in the patient's medical record under the medical history.
